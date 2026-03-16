@@ -1,0 +1,28 @@
+/* --- ESTILOS DA SEÇÃO DE DESTAQUE --- */
+.secao-destaque {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.secao-destaque h1 {
+    color: #212529;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.secao-destaque p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.botoes-destaque a {
+    margin: 0 5px; /* Espaço entre os botões */
+}
+
+/* --- ESTILOS DOS CARDS --- */
