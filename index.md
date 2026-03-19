@@ -1,6 +1,6 @@
 # Guia Bootstrap baseado no seu index (FitFlex)
 
-Este guia explica os principais conceitos e classes do Bootstrap que aparecem na pagina index.
+Este guia explica os principais conceitos e classes do Bootstrap que aparecem no  código.
 
 ---
 
@@ -218,3 +218,127 @@ Se quiser evoluir, próximos passos:
 * Modals (popups)
 * Alerts
 * Tables
+
+---
+
+#  Página de Cadastro
+
+ Elementos novos que aparecem na página de cadastro.
+
+---
+
+## 12. Formulários (Forms)
+
+O Bootstrap possui um conjunto de classes específicas para formulários.
+
+### `.form-label`
+
+* Define o estilo do rótulo (label)
+* Mantém espaçamento e tipografia padrão
+
+### `.form-control`
+
+* Usado em inputs e textarea
+* Aplica:
+
+  * largura total
+  * padding
+  * bordas padronizadas
+
+### `.form-select`
+
+* Estiliza elementos `<select>`
+* Mantém padrão visual consistente com inputs
+
+---
+
+## 13. Modal (Janela Popup)
+
+Componente interativo do Bootstrap que depende de JavaScript.
+
+### `.modal`
+
+* Container principal do modal
+
+### `.fade`
+
+* Adiciona animação de transição
+
+### `.modal-dialog`
+
+* Define estrutura e posicionamento
+
+### `.modal-dialog-centered`
+
+* Centraliza verticalmente na tela
+
+### `.modal-content`
+
+* Caixa principal do conteúdo
+
+### `.modal-header`
+
+* Cabeçalho do modal
+
+### `.modal-body`
+
+* Conteúdo principal
+
+### `.modal-footer`
+
+* Área de ações (botões)
+
+### `.modal-title`
+
+* Estilo do título
+
+### `.btn-close`
+
+* Botão padrão de fechar
+
+---
+
+## 14. Atributos de Interação (Data Attributes)
+
+Bootstrap usa atributos HTML para ativar comportamentos.
+
+### `data-bs-toggle="modal"`
+
+* Indica que o elemento ativa um modal
+
+### `data-bs-target="#modalSucesso"`
+
+* Define qual modal será aberto
+
+### `data-bs-dismiss="modal"`
+
+* Fecha o modal ao clicar
+
+---
+
+## 15. Botões adicionais
+
+### `.btn-secondary`
+
+* Variante de botão com cor secundária
+
+---
+
+## Resumo do Cadastro
+
+Novos conceitos aprendidos aqui:
+
+1. Formulários padronizados
+2. Modal (popup interativo)
+3. Data attributes para interações
+
+---
+
+Agora juntando com o outro arquivo, você já cobre praticamente:
+
+* Layout completo
+* Navegação
+* Componentes visuais
+* Interações básicas
+
+Isso já é nível de projeto acadêmico bem sólido.

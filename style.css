@@ -32,6 +32,21 @@ body {
     color: var(--laranja-principal) !important; 
 }
 
+/* Customizando a cor do botão menu mobile (sanduíche) para laranja */
+.barra-navegacao-escura .navbar-toggler {
+    border-color: var(--laranja-principal); 
+}
+
+.barra-navegacao-escura .navbar-toggler-icon {
+    /* Recriando o ícone SVG padrão do Bootstrap com a nossa cor laranja */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ff5f29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Tira aquela borda preta grossa quando clica no botão */
+.barra-navegacao-escura .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 95, 41, 0.25);
+}
+
 /* Customização do Botão Bootstrap */
 .btn-primary {
     background-color: var(--laranja-principal);
@@ -97,4 +112,79 @@ body {
 .rodape-simples {
     background-color: var(--preto-base);
     color: white;
+}
+
+/* =========================================
+PÁGINA DE CADASTRO - Customizações
+========================================= */
+
+/* Muda a cor da borda e do "brilho" ao clicar nos inputs e selects para o nosso laranja */
+.form-control:focus, 
+.form-select:focus {
+    border-color: var(--laranja-principal);
+    box-shadow: 0 0 0 0.25rem rgba(255, 95, 41, 0.25);
+}
+
+/* Deixa o fundo do formulário um pouco mais destacado do fundo da página */
+form {
+    background-color: #ffffff;
+}
+
+.corpo-pagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz a página ter no mínimo a altura da tela */
+}
+
+.conteudo-principal {
+    flex-grow: 1; /* Empurra o rodapé para baixo */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.alinhamento-centro {
+    justify-content: center; /* Centraliza a coluna no grid */
+}
+
+/* =========================================
+CUSTOMIZAÇÃO DO FORMULÁRIO E TEXTOS
+========================================= */
+.cabecalho-form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cabecalho-form p {
+    color: var(--cinza-claro);
+    margin-bottom: 1.5rem;
+}
+
+.formulario-customizado {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.grupo-input {
+    margin-bottom: 1rem;
+}
+
+.grupo-input-grande {
+    margin-bottom: 1.5rem;
+}
+
+.botao-container {
+    display: grid; /* Faz o botão esticar 100% da largura */
+}
+
+/* Rodapé (Tiramos as classes do Bootstrap, agora estilizamos aqui) */
+.rodape-simples {
+    background-color: var(--preto-base);
+    color: white;
+    margin-top: auto; /* Cola no fundo */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
