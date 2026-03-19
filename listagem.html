@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
+<!-- Utilitários do Bootstrap -->
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Navbar -->
+    <!-- Componente Navbar do Bootstrap -->
     <nav class="navbar navbar-expand-lg barra-navegacao-escura">
+        <!-- Container do Bootstrap -->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">FitFlex</a>
 
+            <!-- Botão toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Collapse -->
             <div class="collapse navbar-collapse" id="menuNavegacao">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -42,11 +47,14 @@
         </div>
     </nav>
 
-    <!-- Conteúdo -->
+    <!-- Container do Bootstrap -->
     <div class="container mt-5">
         <h2 class="mb-4">Lista de Usuários</h2>
 
+        <!-- Componente Tabela do Bootstrap -->
         <table class="table table-striped table-hover">
+
+            <!-- Cabeçalho da tabela -->
             <thead class="table-dark">
                 <tr>
                     <th>#</th>
@@ -56,6 +64,7 @@
                     <th>Ações</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>1</td>
@@ -63,10 +72,14 @@
                     <td>joao@email.com</td>
                     <td>São Paulo</td>
                     <td>
+                        <!-- Botão com modal -->
                         <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+
+                        <!-- Botão com utilitário de cor -->
                         <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
                     </td>
                 </tr>
+
                 <tr>
                     <td>2</td>
                     <td>Maria Souza</td>
@@ -77,6 +90,7 @@
                         <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
                     </td>
                 </tr>
+
                 <tr>
                     <td>3</td>
                     <td>Carlos Lima</td>
@@ -87,6 +101,7 @@
                         <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
                     </td>
                 </tr>
+
                 <tr>
                     <td>4</td>
                     <td>Ana Costa</td>
@@ -97,6 +112,7 @@
                         <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
                     </td>
                 </tr>
+
                 <tr>
                     <td>5</td>
                     <td>Pedro Rocha</td>
@@ -111,22 +127,31 @@
         </table>
     </div>
 
-    <!-- Modal único -->
+    <!-- Componente Modal do Bootstrap -->
     <div class="modal fade" id="modalUsuario" tabindex="-1">
+
+        <!-- Dialog -->
         <div class="modal-dialog">
+
+            <!-- Conteúdo -->
             <div class="modal-content">
 
+                <!-- Header -->
                 <div class="modal-header">
                     <h5 class="modal-title">Detalhes do Usuário</h5>
+
+                    <!-- Botão fechar -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
+                <!-- Body -->
                 <div class="modal-body">
                     <p><strong>Nome:</strong> João Silva</p>
                     <p><strong>Email:</strong> joao@email.com</p>
                     <p><strong>Cidade:</strong> São Paulo</p>
                 </div>
 
+                <!-- Footer -->
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
@@ -137,6 +162,7 @@
 
     <!-- Rodapé -->
     <footer class="rodape-simples mt-auto py-3 text-center">
+        <!-- Container -->
         <div class="container">
             <span>© 2024 FitFlex. Todos os direitos reservados.</span>
         </div>

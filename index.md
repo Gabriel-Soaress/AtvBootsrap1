@@ -1,6 +1,6 @@
 # Guia Bootstrap baseado no seu index (FitFlex)
 
-Este guia explica os principais conceitos e classes do Bootstrap que aparecem no  código.
+Este guia explica os principais conceitos e classes do Bootstrap que aparecem no código.
 
 ---
 
@@ -86,9 +86,21 @@ Exemplo:
 
 * Define cor e estilo principal
 
+### `.btn-danger`
+
+* Botão com cor de perigo (ações destrutivas)
+
+### `.btn-secondary`
+
+* Botão com estilo secundário
+
 ### `.btn-lg`
 
 * Tamanho grande
+
+### `.btn-sm`
+
+* Tamanho pequeno
 
 ---
 
@@ -120,9 +132,9 @@ Exemplo:
 
 ### Margens e paddings
 
-* `mt-3` → margin-top
-* `mb-5` → margin-bottom
-* `py-5` → padding vertical
+* `mt-3`, `mt-5` → margin-top
+* `mb-4`, `mb-5` → margin-bottom
+* `py-3`, `py-5` → padding vertical
 
 ---
 
@@ -140,9 +152,9 @@ Exemplo:
 
 * Texto de destaque
 
-### `.fs-3`
+### `.fs-1`, `.fs-3`
 
-* Tamanho da fonte
+* Tamanhos de fonte
 
 ### `.fw-bold`
 
@@ -164,6 +176,10 @@ Exemplo:
 
 * Centraliza verticalmente
 
+### `.justify-content-between`
+
+* Espaço entre elementos
+
 ### `.align-items-center`
 
 * Centraliza horizontalmente
@@ -172,6 +188,10 @@ Exemplo:
 
 * Altura 100%
 
+### `.min-vh-100`
+
+* Altura mínima da tela inteira
+
 ---
 
 ## 9. Cores e Background
@@ -179,6 +199,14 @@ Exemplo:
 ### `.bg-light`
 
 * Fundo claro
+
+### `.bg-primary`, `.bg-success`, `.bg-danger`
+
+* Cores padrão do Bootstrap
+
+### `.text-white`
+
+* Texto branco para contraste
 
 ---
 
@@ -191,154 +219,188 @@ Exemplo:
 
 ---
 
-## 11. JavaScript do Bootstrap
+## 11. Sombras
+
+### `.shadow`
+
+* Adiciona sombra ao elemento
+
+---
+
+## 12. JavaScript do Bootstrap
 
 ### `bootstrap.bundle.min.js`
 
 * Responsável por:
 
   * Menu mobile (collapse)
+  * Modal
   * Interações
 
 ---
 
-## Resumo geral
+# Página de Cadastro
 
-Você usou 3 pilares do Bootstrap:
-
-1. Layout (container, grid)
-2. Componentes (navbar, card, botão)
-3. Utilitários (espaçamento, texto, flex)
+## O que eu usei de novo no Bootstrap nessa página
 
 ---
 
-Se quiser evoluir, próximos passos:
-
-* Forms (formulários)
-* Modals (popups)
-* Alerts
-* Tables
-
----
-
-#  Página de Cadastro
-
- Elementos novos que aparecem na página de cadastro.
-
----
-
-## 12. Formulários (Forms)
-
-O Bootstrap possui um conjunto de classes específicas para formulários.
+## 13. Formulários (Forms)
 
 ### `.form-label`
 
-* Define o estilo do rótulo (label)
-* Mantém espaçamento e tipografia padrão
+* Estiliza o label
 
 ### `.form-control`
 
-* Usado em inputs e textarea
-* Aplica:
-
-  * largura total
-  * padding
-  * bordas padronizadas
+* Inputs e textarea padronizados
 
 ### `.form-select`
 
-* Estiliza elementos `<select>`
-* Mantém padrão visual consistente com inputs
+* Estiliza selects
 
 ---
 
-## 13. Modal (Janela Popup)
-
-Componente interativo do Bootstrap que depende de JavaScript.
+## 14. Modal (Janela Popup)
 
 ### `.modal`
 
-* Container principal do modal
+* Container principal
 
 ### `.fade`
 
-* Adiciona animação de transição
+* Animação
 
 ### `.modal-dialog`
 
-* Define estrutura e posicionamento
+* Estrutura
 
 ### `.modal-dialog-centered`
 
-* Centraliza verticalmente na tela
+* Centralização vertical
 
 ### `.modal-content`
 
-* Caixa principal do conteúdo
+* Caixa principal
 
-### `.modal-header`
+### `.modal-header`, `.modal-body`, `.modal-footer`
 
-* Cabeçalho do modal
-
-### `.modal-body`
-
-* Conteúdo principal
-
-### `.modal-footer`
-
-* Área de ações (botões)
+* Estrutura interna
 
 ### `.modal-title`
 
-* Estilo do título
+* Título
 
 ### `.btn-close`
 
-* Botão padrão de fechar
+* Botão de fechar
 
 ---
 
-## 14. Atributos de Interação (Data Attributes)
-
-Bootstrap usa atributos HTML para ativar comportamentos.
+## 15. Atributos de Interação
 
 ### `data-bs-toggle="modal"`
 
-* Indica que o elemento ativa um modal
+* Abre o modal
 
 ### `data-bs-target="#modalSucesso"`
 
-* Define qual modal será aberto
+* Define qual modal abrir
 
 ### `data-bs-dismiss="modal"`
 
-* Fecha o modal ao clicar
+* Fecha o modal
 
 ---
 
-## 15. Botões adicionais
+# Página Dashboard
 
-### `.btn-secondary`
-
-* Variante de botão com cor secundária
+## O que eu usei de novo no Bootstrap nessa página
 
 ---
 
-## Resumo do Cadastro
+## 16. Ícones
 
-Novos conceitos aprendidos aqui:
+### Bootstrap Icons
 
-1. Formulários padronizados
-2. Modal (popup interativo)
-3. Data attributes para interações
+* `bi bi-people-fill`
+* `bi bi-person-plus-fill`
+* `bi bi-exclamation-triangle-fill`
 
 ---
 
-Agora juntando com o outro arquivo, você já cobre praticamente:
+## 17. Cards com utilitários
 
-* Layout completo
-* Navegação
-* Componentes visuais
-* Interações básicas
+* Uso de cores (`bg-*`)
+* Uso de `text-white`
+* Uso de `shadow`
+* Uso de flexbox dentro do card
 
-Isso já é nível de projeto acadêmico bem sólido.
+---
+
+# Página Listagem
+
+## O que eu usei de novo no Bootstrap nessa página
+
+---
+
+## 18. Tabelas
+
+### `.table`
+
+* Estrutura base
+
+### `.table-striped`
+
+* Linhas alternadas
+
+### `.table-hover`
+
+* Efeito ao passar o mouse
+
+### `.table-dark`
+
+* Cabeçalho escuro
+
+---
+
+## 19. Integração com Modal
+
+* Botões usando `data-bs-toggle`
+* Reutilização de um único modal
+
+---
+
+# Página Contato
+
+## O que eu usei de novo no Bootstrap nessa página
+
+---
+
+* Não houve novos componentes
+* Reforço de:
+  - Container
+  - Grid
+  - Navbar
+
+---
+
+## Resumo Final
+
+Com esse projeto, eu utilizei:
+
+* Layout responsivo completo
+* Sistema de grid
+* Navbar responsiva
+* Cards
+* Formulários
+* Modal (interação)
+* Tabelas
+* Ícones
+* Utilitários (cores, espaçamento, flexbox)
+
+---
+
+## Conclusão
+
+Esse projeto cobre praticamente todo o Bootstrap básico e parte do intermediário, sendo suficiente para desenvolvimento de interfaces modernas e responsivas.
