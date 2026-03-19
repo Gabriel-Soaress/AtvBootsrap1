@@ -1,28 +1,100 @@
-/* --- ESTILOS DA SEÇÃO DE DESTAQUE --- */
-.secao-destaque {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f8f9fa; /* Fundo cinza claro */
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+/* style.css */
+
+/* Paleta de Cores */
+:root {
+    --laranja-principal: #ff5f29;
+    --laranja-claro: #ff7d51;
+    --preto-base: #242424;
+    --cinza-escuro: #585858;
+    --cinza-claro: #aaaaaa;
 }
 
-.secao-destaque h1 {
-    color: #212529;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+/* Estilos Gerais */
+body {
+    background-color: #f8f9fa; /* Fundo padrão claro do Bootstrap mantido */
+    color: var(--preto-base);
+    font-family: Arial, sans-serif;
+}
+
+/* Customização da Barra de Navegação */
+.barra-navegacao-escura {
+    background-color: var(--preto-base) !important; 
+}
+.barra-navegacao-escura .navbar-brand,
+.barra-navegacao-escura .nav-link {
+    color: white !important; 
+}
+.barra-navegacao-escura .nav-link.active {
+    color: var(--laranja-principal) !important; 
     font-weight: bold;
 }
-
-.secao-destaque p {
-    color: #6c757d;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.barra-navegacao-escura .nav-link:hover {
+    color: var(--laranja-principal) !important; 
 }
 
-.botoes-destaque a {
-    margin: 0 5px; /* Espaço entre os botões */
+/* Customização do Botão Bootstrap */
+.btn-primary {
+    background-color: var(--laranja-principal);
+    border-color: var(--laranja-principal);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #e65525; 
+    border-color: #e65525;
 }
 
-/* --- ESTILOS DOS CARDS --- */
+/* Seção de Apresentação (Fundo com a imagem) */
+.secao-apresentacao-principal {
+    position: relative;
+    background-color: var(--cinza-escuro); 
+    height: 80vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* TODO: Coloque o caminho da sua imagem de fundo aqui */
+    /* Exemplo: background-image: url('fundo-academia.jpg'); */
+}
+
+/* Película escura sobre a imagem de fundo para o texto ficar legível */
+.secao-apresentacao-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+/* Garante que o texto fique acima da película escura */
+.conteudo-apresentacao {
+    z-index: 2; 
+    position: relative;
+}
+
+/* Customização dos Cartões de Destaque */
+.cartao-estilizado {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+.cartao-estilizado .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    background-color: #e0e0e0; 
+}
+.cartao-estilizado .card-body {
+    background-color: white;
+}
+.cartao-estilizado .card-title {
+    color: var(--cinza-escuro);
+}
+.cartao-estilizado .card-text {
+    color: var(--cinza-claro);
+}
+
+/* Rodapé */
+.rodape-simples {
+    background-color: var(--preto-base);
+    color: white;
+}
