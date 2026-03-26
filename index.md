@@ -338,13 +338,37 @@ Exemplo:
 
 ---
 
+## 18. Novos utilitários aplicados
+
+### `.flex-grow-1`
+
+* Faz o elemento crescer e ocupar o espaço restante da tela
+
+### `.h-100` (em cards)
+
+* Faz o card ocupar toda a altura disponível da coluna
+
+### `.mb-0`
+
+* Remove margem inferior (usado em títulos dentro dos cards)
+
+### `.text-md-start`
+
+* Alinha texto à esquerda em telas médias ou maiores
+
+### `.text-center` (em navbar mobile)
+
+* Centraliza itens em telas pequenas
+
+---
+
 # Página Listagem
 
 ## O que eu usei de novo no Bootstrap nessa página
 
 ---
 
-## 18. Tabelas
+## 19. Tabelas
 
 ### `.table`
 
@@ -364,7 +388,39 @@ Exemplo:
 
 ---
 
-## 19. Integração com Modal
+## 20. Responsividade em tabelas
+
+### `.table-responsive-sm`
+
+* Torna a tabela rolável horizontalmente em telas pequenas
+
+---
+
+## 21. Controle de visibilidade
+
+### `.d-none`
+
+* Esconde elemento
+
+### `.d-md-table-cell`
+
+* Mostra elemento como célula de tabela em telas médias ou maiores
+
+---
+
+## 22. Layout responsivo com flex
+
+### `.flex-md-row`
+
+* Altera direção para linha em telas médias
+
+### `.gap-1`
+
+* Espaçamento entre elementos flex
+
+---
+
+## 23. Integração com Modal
 
 * Botões usando `data-bs-toggle`
 * Reutilização de um único modal
@@ -403,4 +459,4 @@ Com esse projeto, eu utilizei:
 
 ## Conclusão
 
-Esse projeto cobre praticamente todo o Bootstrap básico e parte do intermediário, sendo suficiente para desenvolvimento de interfaces modernas e responsivas.
+Esse projeto cobre praticamente todo o Bootstrap básico e parte do intermediário, sendo suficiente para desenvolvimento de interfaces modernas e responsivass.
