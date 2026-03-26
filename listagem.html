@@ -10,148 +10,126 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<!-- Utilitários do Bootstrap -->
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Componente Navbar do Bootstrap -->
-    <nav class="navbar navbar-expand-lg barra-navegacao-escura">
-        <!-- Container do Bootstrap -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg barra-navegacao-escura navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">FitFlex</a>
 
-            <!-- Botão toggler -->
+            <a class="navbar-brand fw-bold" href="index.html">FitFlex</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Collapse -->
             <div class="collapse navbar-collapse" id="menuNavegacao">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cadastro.html">Cadastro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="listagem.html">Listagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="listagem.html">Listagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-    <!-- Container do Bootstrap -->
-    <div class="container mt-5">
-        <h2 class="mb-4">Lista de Usuários</h2>
+    <!-- Conteúdo -->
+    <main class="container mt-5 flex-grow-1">
+        <h2 class="mb-4 text-center text-md-start">Lista de Usuários</h2>
 
-        <!-- Componente Tabela do Bootstrap -->
-        <table class="table table-striped table-hover">
+        <!-- Responsivo melhorado -->
+        <div class="table-responsive-sm">
+            <table class="table table-striped table-hover align-middle text-center text-md-start">
 
-            <!-- Cabeçalho da tabela -->
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Cidade</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th class="d-none d-md-table-cell">Email</th>
+                        <th class="d-none d-md-table-cell">Cidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>João Silva</td>
-                    <td>joao@email.com</td>
-                    <td>São Paulo</td>
-                    <td>
-                        <!-- Botão com modal -->
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td class="d-none d-md-table-cell">joao@email.com</td>
+                        <td class="d-none d-md-table-cell">São Paulo</td>
+                        <td class="d-flex flex-column flex-md-row gap-1">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                            <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
+                        </td>
+                    </tr>
 
-                        <!-- Botão com utilitário de cor -->
-                        <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Souza</td>
+                        <td class="d-none d-md-table-cell">maria@email.com</td>
+                        <td class="d-none d-md-table-cell">Rio de Janeiro</td>
+                        <td class="d-flex flex-column flex-md-row gap-1">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                            <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>2</td>
-                    <td>Maria Souza</td>
-                    <td>maria@email.com</td>
-                    <td>Rio de Janeiro</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
-                        <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carlos Lima</td>
+                        <td class="d-none d-md-table-cell">carlos@email.com</td>
+                        <td class="d-none d-md-table-cell">Belo Horizonte</td>
+                        <td class="d-flex flex-column flex-md-row gap-1">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                            <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>3</td>
-                    <td>Carlos Lima</td>
-                    <td>carlos@email.com</td>
-                    <td>Belo Horizonte</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
-                        <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ana Costa</td>
+                        <td class="d-none d-md-table-cell">ana@email.com</td>
+                        <td class="d-none d-md-table-cell">Curitiba</td>
+                        <td class="d-flex flex-column flex-md-row gap-1">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                            <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>4</td>
-                    <td>Ana Costa</td>
-                    <td>ana@email.com</td>
-                    <td>Curitiba</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
-                        <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Pedro Rocha</td>
+                        <td class="d-none d-md-table-cell">pedro@email.com</td>
+                        <td class="d-none d-md-table-cell">Salvador</td>
+                        <td class="d-flex flex-column flex-md-row gap-1">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
+                            <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
 
-                <tr>
-                    <td>5</td>
-                    <td>Pedro Rocha</td>
-                    <td>pedro@email.com</td>
-                    <td>Salvador</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalUsuario">Detalhes</button>
-                        <button class="btn btn-danger btn-sm" onclick="alert('Usuário excluído!')">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            </table>
+        </div>
+    </main>
 
-    <!-- Componente Modal do Bootstrap -->
+    <!-- Modal -->
     <div class="modal fade" id="modalUsuario" tabindex="-1">
-
-        <!-- Dialog -->
         <div class="modal-dialog">
-
-            <!-- Conteúdo -->
             <div class="modal-content">
 
-                <!-- Header -->
                 <div class="modal-header">
                     <h5 class="modal-title">Detalhes do Usuário</h5>
-
-                    <!-- Botão fechar -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <!-- Body -->
                 <div class="modal-body">
                     <p><strong>Nome:</strong> João Silva</p>
                     <p><strong>Email:</strong> joao@email.com</p>
                     <p><strong>Cidade:</strong> São Paulo</p>
                 </div>
 
-                <!-- Footer -->
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
@@ -162,7 +140,6 @@
 
     <!-- Rodapé -->
     <footer class="rodape-simples mt-auto py-3 text-center">
-        <!-- Container -->
         <div class="container">
             <span>© 2024 FitFlex. Todos os direitos reservados.</span>
         </div>
